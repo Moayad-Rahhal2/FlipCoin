@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="FlipCoin:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FlipCoin_jar</output-path>
+    <root id="archive" name="FlipCoin.jar">
+      <element id="module-output" name="FlipCoin" />
+    </root>
+  </artifact>
+</component>
