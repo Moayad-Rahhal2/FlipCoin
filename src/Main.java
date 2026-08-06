@@ -1,11 +1,16 @@
 
+import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
-    private static final Scanner scanner = new Scanner(System.in);
-    private static final Random random = new Random();
-    static void main() {
+    private static final Scanner scanner;
+    private static final Random random;
+    static{
+        scanner = new Scanner(System.in);
+        random = new Random();
+    }
+    public static void main() {
         flipCoin();
     }
 
@@ -13,7 +18,13 @@ public class Main {
         System.out.println("The max number u can enter as int is: "+Integer.MAX_VALUE);
         System.out.println("Enter odd number");
         while (true) {
-            int odd = scanner.nextInt();
+            int odd;
+            try {
+                odd = Integer.parseInt(scanner.nextLine());
+            }catch (NumberFormatException  e){
+                System.out.println("Enter odd number plz");
+                continue;
+            }
             if (odd % 2 == 0) {
                 System.out.println("Enter odd number plz");
                 continue;

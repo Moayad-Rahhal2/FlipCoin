@@ -1,0 +1,3 @@
+[19:04:03.861] Can not find WiX tools. Was looking for WiX v3 light.exe and candle.exe or WiX v4/v5 wix.exe and none was found
+[19:04:03.862] Download WiX 3.0 or later from https://wixtoolset.org and add it to the PATH.
+Error: Invalid or unsupported type: [exe]
