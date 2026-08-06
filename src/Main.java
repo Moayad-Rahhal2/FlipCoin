@@ -7,6 +7,7 @@ public class Main {
     private static final Random random = new Random();
     static void main() {
         flipCoin();
+        System.out.println("s");
     }
 
     private static void flipCoin() {
